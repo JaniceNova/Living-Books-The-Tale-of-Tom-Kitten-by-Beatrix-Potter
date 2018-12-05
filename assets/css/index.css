@@ -1,5 +1,10 @@
 
-
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
 html body { 
     background: url(../images/flowerPinkRoseTanColor.jpg) no-repeat center center fixed; 
      -webkit-background-size: cover;
@@ -19,6 +24,7 @@ html body {
 #kittenPicture {
     float:left;
     width: 500px;
+    box-shadow: 2px 7px 15px #888888;
 
 }
 .Buttons {
@@ -33,13 +39,13 @@ html body {
     box-shadow: 5px 10px 18px #888888;
     padding:15px;
     border-radius: 5px;
-    width:405px;
+    width:390px;
     float:left;
     margin-top:30px;
-    margin-left: 30px;
-    margin-right:30px;
+    margin-left: 55px;
+    margin-right:55px;
     margin-bottom:30px;
-   margin-top:370px;
+   /* margin-top:370px; */
 
 }
 .text{
@@ -50,5 +56,12 @@ html body {
     margin-right:40px;
     margin-left: 40px;
     background-color: white;
+    box-shadow: 2px 7px 15px #888888;
+    padding-top: 30px;
+    text-align: center;
+}
+
+#title {
+    font-size: 40px;
 }
 
