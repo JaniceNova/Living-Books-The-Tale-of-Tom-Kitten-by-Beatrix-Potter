@@ -33,6 +33,7 @@ html body {
     padding:15px;
     border-radius: 5px;
     width:425px;
+    float:left;
 }
 .text{
     width: 400px;
