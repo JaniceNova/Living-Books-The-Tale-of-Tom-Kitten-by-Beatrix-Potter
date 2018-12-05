@@ -7,11 +7,24 @@ html body {
     -o-background-size: cover;
     background-size: cover; 
   }
+.picture {
+    float: left;
+    width:500px;
+    margin-left:40px;
+    margin-top:30px;
+    
+}
 
+#kittenPicture {
+    float:left;
+    width: 500px;
+
+}
 .Buttons {
     width: 70px;
     height: 70px;
     padding: 5px;
+    float: left;
 }
 
 #buttonBar{
@@ -19,5 +32,9 @@ html body {
     box-shadow: 5px 10px 18px #888888;
     padding:15px;
     border-radius: 5px;
-    width:400px;
+    width:425px;
+}
+.text{
+    width: 400px;
+    float: left;
 }
