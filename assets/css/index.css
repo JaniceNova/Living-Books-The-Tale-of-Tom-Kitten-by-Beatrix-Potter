@@ -87,3 +87,11 @@ html body {
     font-size: 25px;
   
 }
+
+img:hover {
+    background-color: rgba(37, 127, 129, 0.6);
+    border-radius: 60px;
+}
+img:active {
+    color: green;
+} 
