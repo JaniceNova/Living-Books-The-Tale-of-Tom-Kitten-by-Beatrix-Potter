@@ -25,7 +25,7 @@ html body {
     float:left;
     width: 500px;
     box-shadow: 2px 7px 15px #888888;
-    padding-top:35px;
+    border-top: 35px solid white;
 
 }
 .Buttons {
