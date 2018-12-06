@@ -22,3 +22,11 @@ $(".Buttons").hover(function () {
 }, function () {
     $(this).css("background-color", "rgba(0, 0, 0, 0)")
 })
+
+
+
+// audio ---------------------------------------------
+
+
+
+$("#audio")[0].play();
