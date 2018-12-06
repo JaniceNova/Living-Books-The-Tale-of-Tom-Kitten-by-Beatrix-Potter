@@ -25,6 +25,7 @@ html body {
     float:left;
     width: 500px;
     box-shadow: 2px 7px 15px #888888;
+    padding-top:35px;
 
 }
 .Buttons {
@@ -64,26 +65,7 @@ html body {
     font-weight: 600;
 }
 
-#title {
-    font-size: 50px;
-    margin-top:40px;
-    font-weight: 900;
-}
-
-
-#author{
-    font-size: 25px;
-    
-}
-#Peter{
-    font-size: 15px;
-  
-}
-#pubDate{
-    font-size: 15px;
-
-}
-#dedication{
+#writing{
     font-size: 25px;
   
 }
