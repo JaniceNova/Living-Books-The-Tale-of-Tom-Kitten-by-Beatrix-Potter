@@ -32,6 +32,7 @@ html body {
     height: 70px;
     padding: 5px;
     float: left;
+    border-radius: 60px;
 }
 
 #buttonBar{
@@ -88,10 +89,3 @@ html body {
   
 }
 
-.Buttons:hover {
-    background-color: rgba(37, 127, 129, 0.6);
-    border-radius: 60px;
-}
-.Buttons:active {
-    color: green;
-} 
