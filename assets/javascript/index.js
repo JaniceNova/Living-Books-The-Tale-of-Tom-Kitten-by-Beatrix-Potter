@@ -1,12 +1,12 @@
 
-$("#title").hover(function () {
-    $(this).attr("width", $(this).attr("width") * 3.5)
-    $(this).attr("height", $(this).attr("height") * 3.5)
+// $("#title").hover(function () {
+//     $(this).attr("width", $(this).attr("width") * 3.5)
+//     $(this).attr("height", $(this).attr("height") * 3.5)
 
-}, function () {
-    $(this).attr("width", $(this).attr("width") / 3.5)
-    $(this).attr("height", $(this).attr("height") / 3.5)
-})
+// }, function () {
+//     $(this).attr("width", $(this).attr("width") / 3.5)
+//     $(this).attr("height", $(this).attr("height") / 3.5)
+// })
 
 // button magic --------------
 $(".Buttons").mousedown(function () {
@@ -28,36 +28,33 @@ $(".Buttons").hover(function () {
 // audio ---------------------------------------------
 
 $(document).ready(function() {
+    $("#Play").src="assets/images/blackPlayButton.svg"
     var audioElement = document.createElement('audio');
     audioElement.setAttribute('src', 'assets/javascript/Title.mp3');
     
     audioElement.addEventListener('ended', function() {
         this.play();
     }, false);
-    
-    // audioElement.addEventListener("canplay",function(){
-    //     $("#length").text("Duration:" + audioElement.duration + " seconds");
-    //     $("#source").text("Source:" + audioElement.src);
-    //     $("#status").text("Status: Ready to play").css("color","green");
-    // });
-    
-    // audioElement.addEventListener("timeupdate",function(){
-    //     $("#currentTime").text("Current second:" + audioElement.currentTime);
-    // });
-    
-    $('#Play').click(function() {
-
-    if()
+    var a = 0;
+$('#Play').click(function() {
+   if(a===1) {
+        audioElement.pause();
+        a=0;
+        $("#Play").src="";
+        $("#Play").src="assets/images/blackPlayButton.svg";
+        
+    }
+    else {
         audioElement.play();
-        $("#status").text("Status: Playing");
-    });
-    
-    // $('#pause').click(function() {
-    //     audioElement.pause();
-    //     $("#status").text("Status: Paused");
-    // });
-    
-    // $('#restart').click(function() {
-    //     audioElement.currentTime = 0;
-    // });
+        a=1;
+        $("#Play").src="";
+        $("#Play").src="assets/images/pauseButton.svg";
+
+    }
 });
+});
+
+
+// $("a#button").attr("class", "play");
+
+// $("a#button").attr("class", "pause");
