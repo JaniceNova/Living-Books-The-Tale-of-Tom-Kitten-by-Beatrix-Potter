@@ -22,33 +22,50 @@ $(".Buttons").hover(function () {
 }, function () {
     $(this).css("background-color", "rgba(0, 0, 0, 0)")
 })
+$("#playButtonGoesHere").mousedown(function () {
+    $(this).css("background-color", "rgba(37, 87, 129, 0.6)")
+})
+
+$("#playButtonGoesHere").mouseup(function () {
+    $(this).css("background-color", "rgba(37, 127, 129, 0.6)")
+})
+
+$("#playButtonGoesHere").hover(function () {
+    $(this).css("background-color", "rgba(37, 127, 129, 0.6)")
+}, function () {
+    $(this).css("background-color", "rgba(0, 0, 0, 0)")
+})
 
 
 
 // audio ---------------------------------------------
 
 $(document).ready(function() {
+
+$("#playButtonGoesHere").html("<img src='assets/images/blackPlayButton.svg' alt='PlayButton' class='Buttons canplay canpause' Title='Play' id='Play'></img>")
     $("#Play").src="assets/images/blackPlayButton.svg"
     var audioElement = document.createElement('audio');
-    audioElement.setAttribute('src', 'assets/javascript/Title.mp3');
+ audioElement.setAttribute('src', 'assets/javascript/Title.mp3');
     
     audioElement.addEventListener('ended', function() {
         this.play();
     }, false);
     var a = 0;
-$('#Play').click(function() {
+$('#playButtonGoesHere').click(function() {
    if(a===1) {
         audioElement.pause();
         a=0;
-        $("#Play").src="";
-        $("#Play").src="assets/images/blackPlayButton.svg";
+        // $("#Play").setAttribute('src', '')
+        // $("#Play").setAttribute('src', 'assets/images/blackPlayButton.svg')
         
+        $("#playButtonGoesHere").html("<img src='assets/images/blackPlayButton.svg' alt='PlayButton' class='Buttons canplay canpause' Title='Play' id='Play'></img>")
     }
     else {
         audioElement.play();
         a=1;
-        $("#Play").src="";
-        $("#Play").src="assets/images/pauseButton.svg";
+        // $("#Play").setAttribute('src', 'assets/images/pauseButton.svg')
+       // $("#Play").src="assets/images/pauseButton.svg";
+       $("#playButtonGoesHere").html("<img src='assets/images/pauseButton.svg' alt='PlayButton' class='Buttons canplay canpause' Title='Play' id='Play'></img>")
 
     }
 });
