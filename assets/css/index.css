@@ -54,12 +54,12 @@ html body {
     width: 500px;
     height: 600px;
     float: left;
-    margin-top:25px;
+    margin-top:30px;
     margin-right:40px;
     margin-left: 40px;
     background-color: white;
     box-shadow: 2px 7px 15px #888888;
-    padding-top: 25px;
+    padding-top: 30px;
     padding-right:60px;
     padding-left:60px;
     text-align: center;
@@ -69,7 +69,7 @@ html body {
 
 #title {
     font-size: 50px;
-    margin-top:40px;
+    margin-top:10px;
     font-weight: 900;
 }
 
