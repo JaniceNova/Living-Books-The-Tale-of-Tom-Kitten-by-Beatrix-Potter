@@ -78,7 +78,7 @@ $(document).ready(function () {
     });
 
     $("span").hover(function(){
-        $(this).css("background-color", "yellow")
+        $(this).css("background-color", "rgba(37, 127, 129, 0.6)")
     }, function(){
         $(this).css("background-color", "white")
     })
@@ -88,7 +88,7 @@ $(document).ready(function () {
     })
     
     $("span").mouseup(function () {
-        $(this).css("background-color", "yellow")
+        $(this).css("background-color", "rgba(37, 127, 129, 0.6)")
     })
 });
 
