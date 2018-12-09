@@ -40,35 +40,56 @@ $("#playButtonGoesHere").hover(function () {
 
 // audio ---------------------------------------------
 
-$(document).ready(function() {
+$(document).ready(function () {
 
-$("#playButtonGoesHere").html("<img src='assets/images/blackPlayButton.svg' alt='PlayButton' class='Buttons canplay canpause' Title='Play' id='Play'></img>")
-    $("#Play").src="assets/images/blackPlayButton.svg"
+    $("#playButtonGoesHere").html("<img src='assets/images/blackPlayButton.svg' alt='PlayButton' class='Buttons canplay canpause' Title='Play' id='Play'></img>")
+    $("#Play").src = "assets/images/blackPlayButton.svg"
     var audioElement = document.createElement('audio');
- audioElement.setAttribute('src', 'assets/javascript/Title.mp3');
-    
-    audioElement.addEventListener('ended', function() {
-        this.play();
-    }, false);
-    var a = 0;
-$('#playButtonGoesHere').click(function() {
-   if(a===1) {
-        audioElement.pause();
-        a=0;
-        // $("#Play").setAttribute('src', '')
-        // $("#Play").setAttribute('src', 'assets/images/blackPlayButton.svg')
-        
-        $("#playButtonGoesHere").html("<img src='assets/images/blackPlayButton.svg' alt='PlayButton' class='Buttons canplay canpause' Title='Play' id='Play'></img>")
-    }
-    else {
-        audioElement.play();
-        a=1;
-        // $("#Play").setAttribute('src', 'assets/images/pauseButton.svg')
-       // $("#Play").src="assets/images/pauseButton.svg";
-       $("#playButtonGoesHere").html("<img src='assets/images/pauseButton.svg' alt='PlayButton' class='Buttons canplay canpause' Title='Play' id='Play'></img>")
+    audioElement.setAttribute('src', 'assets/javascript/Title.mp3');
 
-    }
-});
+ audioElement.addEventListener('ended', function () {
+            a = 0;
+            $("#playButtonGoesHere").html("<img src='assets/images/blackPlayButton.svg' alt='PlayButton' class='Buttons canplay canpause' Title='Play' id='Play'></img>")
+            },false);
+    // audioElement.addEventListener('ended', function () {
+    //     this.play();
+    // }, false);  
+   
+    var a = 0; 
+    
+    if (audioElement.currentTime = 0) {
+                
+                audioElement.pause();
+            }
+    $('#playButtonGoesHere').click(function () {
+        if (a === 1) {
+            audioElement.pause();
+            a = 0;
+            $("#playButtonGoesHere").html("<img src='assets/images/blackPlayButton.svg' alt='PlayButton' class='Buttons canplay canpause' Title='Play' id='Play'></img>")
+         
+        }
+        else {
+            audioElement.play();
+            a = 1;
+            $("#playButtonGoesHere").html("<img src='assets/images/pauseButton.svg' alt='PlayButton' class='Buttons canplay canpause' Title='Play' id='Play'></img>")
+
+        } 
+       
+    });
+
+    $("span").hover(function(){
+        $(this).css("background-color", "yellow")
+    }, function(){
+        $(this).css("background-color", "white")
+    })
+
+    $("span").mousedown(function () {
+        $(this).css("background-color", "rgba(37, 87, 129, 0.6)")
+    })
+    
+    $("span").mouseup(function () {
+        $(this).css("background-color", "yellow")
+    })
 });
 
 
