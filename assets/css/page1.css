@@ -74,4 +74,11 @@ html body {
   
 }
 
+.buttonsDOM {
+    width: 70px;
+    height: 70px;
+    padding: 0px;
+    float: left;
+    border-radius: 60px;
+}
 
