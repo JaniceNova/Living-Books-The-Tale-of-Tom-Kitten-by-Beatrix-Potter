@@ -93,6 +93,7 @@ $(document).ready(function () {
 });
 
 
-// $("a#button").attr("class", "play");
-
-// $("a#button").attr("class", "pause");
+// Code for getting value of span tags
+$("span").mousedown(function () {
+    console.log($(this).text())
+})
