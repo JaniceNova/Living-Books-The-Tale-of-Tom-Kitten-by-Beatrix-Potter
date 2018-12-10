@@ -146,4 +146,10 @@ html body {
     text-decoration: none;
     cursor: pointer;
   }
-  
+
+  .modalPic{
+      width:20px;
+  }
+  .textModal {
+      font-size: 25px;
+  }
