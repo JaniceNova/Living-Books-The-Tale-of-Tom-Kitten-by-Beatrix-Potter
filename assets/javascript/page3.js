@@ -26,24 +26,26 @@ $("#playButtonGoesHere").hover(function () {
 })
 
 //pictures of cats
-var b = 0;
-$(".picture").html("<img src='assets/images/moppet.jpg'  id='kittenPicture1'></img>")
 
+$(".picture").html("<img src='assets/images/moppet.jpg'  id='kittenPicture1'>")
 
+  var boo = 0;
 $('.picture').click(function () {
+  
+console.log("hi");
+    if (boo === 0) {
+        console.log("yo");
+        boo = 1;
+        $(".picture").html("<img src='assets/images/mittens.jpg' alt='kitty' id='kittenPicture2'>");
+    }
+    else if (boo === 1) {
+        boo = 2;
+        $(".picture").html("<img src='assets/images/tom.jpg' alt='kitty'   id='kittenPicture3'>");
+    }
+    else if (boo === 2) {
+        boo = 0;
 
-    if (b === 0) {
-        b = 1;
-        $(".picture").html("<img src='assets/images/mittens.jpg' id='kittenPicture2'></img>");
-    };
-    if (b === 1) {
-        b = 2;
-        $(".picture").html("<img src='assets/images/tom.jpg'  id='kittenPicture3'></img>");
-    };
-    if (b === 2) {
-        b = 0;
-
-        $(".picture").html("<img src='assets/images/moppet.jpg'  id='kittenPicture1'></img>");
+        $(".picture").html("<img src='assets/images/moppet.jpg'  alt='kitty'  id='kittenPicture1'>");
     };
 });
 // $('#kittenPicture1').click(function () {
