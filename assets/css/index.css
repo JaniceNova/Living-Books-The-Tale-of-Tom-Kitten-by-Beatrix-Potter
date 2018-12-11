@@ -146,6 +146,19 @@ html body {
     text-decoration: none;
     cursor: pointer;
   }
+  .close2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close2:hover,
+  .close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
   .modalPic{
       width:20px;
