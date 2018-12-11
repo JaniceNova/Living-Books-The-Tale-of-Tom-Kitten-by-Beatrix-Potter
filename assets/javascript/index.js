@@ -156,3 +156,11 @@ $('#invisiblebox1').click(function () {
     
     meow1.play();
 });
+
+var meow2 = document.createElement('audio');
+    meow2.setAttribute('src', 'assets/javascript/meow2.mp3');
+$('#invisiblebox2').click(function () {
+
+    
+    meow2.play();
+});
