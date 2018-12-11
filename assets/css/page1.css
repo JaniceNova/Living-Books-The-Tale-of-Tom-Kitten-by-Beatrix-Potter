@@ -140,3 +140,35 @@ html body {
     
   }
 
+
+
+  #invisiblebox1 {
+    border: 3px solid black;
+    width:250px;
+    height:170px;
+    z-index: 2;
+    position: fixed;
+    margin-top: 360px;
+    margin-left: 220px;
+}
+
+#invisiblebox2 {
+  border: 3px solid black;
+  width:210px;
+  height:210px;
+  z-index: 2;
+  position: fixed;
+  margin-top: 150px;
+  margin-left: 170px;
+
+}
+#invisiblebox3 {
+    border: 3px solid black;
+    width:110px;
+    height:130px;
+    z-index: 2;
+    position: fixed;
+    margin-top: 230px;
+    margin-left: 380px;
+  
+  }
