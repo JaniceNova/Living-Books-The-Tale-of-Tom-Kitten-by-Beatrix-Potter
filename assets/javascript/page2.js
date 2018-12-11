@@ -168,16 +168,16 @@ function say(m){ 	var msg = new SpeechSynthesisUtterance(); 	var voices = window
 //invisiblebox sounds
 
 $('#invisiblebox1').click(function () {
-    say("Tom Kitten")
+    say("Mrs. Tabitha Twitchit")
   
 });
 
 
+
+var clock = document.createElement('audio');
+    clock.setAttribute('src', 'assets/javascript/clock.mp3');
 $('#invisiblebox2').click(function () {
-    say("moppet")
-  
-});
-$('#invisiblebox3').click(function () {
-    say("mittens")
-  
+
+    
+    clock.play();
 });
