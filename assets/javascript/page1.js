@@ -166,19 +166,19 @@ function say(m){ 	var msg = new SpeechSynthesisUtterance(); 	var voices = window
 
 
 //invisiblebox sounds
-var meow1 = document.createElement('audio');
-    meow1.setAttribute('src', 'assets/javascript/meow1.mp3');
-$('#invisiblebox1').click(function () {
 
-    
-    meow1.play();
+$('#invisiblebox1').click(function () {
+    say("Tom Kitten")
+  
 });
 
-var meow2 = document.createElement('audio');
-    meow2.setAttribute('src', 'assets/javascript/meow2.mp3');
-$('#invisiblebox2').click(function () {
 
-    
-    meow2.play();
+$('#invisiblebox2').click(function () {
+    say("moppet")
+  
+});
+$('#invisiblebox3').click(function () {
+    say("mittens")
+  
 });
 
