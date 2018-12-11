@@ -18,6 +18,7 @@ html body {
 .picture {
     float: left;
     width:500px;
+
     margin-left:110px;
     margin-top:30px;
     
@@ -25,9 +26,10 @@ html body {
 
 #kittenPicture {
     float:left;
-    width: 500px;
+    width:500px;
+    height:600px;
     box-shadow: 2px 7px 15px #888888;
-    border-top: 35px solid white;
+  
 
 }
 .Buttons {
@@ -61,9 +63,10 @@ html body {
     margin-left: 40px;
     background-color: white;
     box-shadow: 2px 7px 15px #888888;
-    padding-top: 90px;
+    padding-top: 170px;
     padding-right:60px;
     padding-left:60px;
+ 
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
