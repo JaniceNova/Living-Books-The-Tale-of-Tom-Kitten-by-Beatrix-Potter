@@ -24,7 +24,23 @@ html body {
     
 }
 
-#kittenPicture {
+#kittenPicture1 {
+    float:left;
+    width:500px;
+    height:600px;
+    box-shadow: 2px 7px 15px #888888;
+  
+
+}
+#kittenPicture2 {
+    float:left;
+    width:500px;
+    height:600px;
+    box-shadow: 2px 7px 15px #888888;
+  
+
+}
+#kittenPicture3 {
     float:left;
     width:500px;
     height:600px;
