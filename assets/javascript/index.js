@@ -45,7 +45,8 @@ $(document).ready(function () {
     $("#playButtonGoesHere").html("<img src='assets/images/blackPlayButton.svg' alt='PlayButton' class='Buttons canplay canpause' Title='Play' id='Play'></img>")
     $("#Play").src = "assets/images/blackPlayButton.svg"
     var audioElement = document.createElement('audio');
-    audioElement.setAttribute('src', 'assets/javascript/Title.mp3');
+    audioElement.setAttribute('src', 'assets/javascript/tomkit.mp3');
+ 
 
  audioElement.addEventListener('ended', function () {
             a = 0;
@@ -145,3 +146,13 @@ window.onclick = function(event) {
 
 
 function say(m){ 	var msg = new SpeechSynthesisUtterance(); 	var voices = window.speechSynthesis.getVoices(); 	msg.voice = voices[10]; 	msg.voiceURI = "native"; 	msg.volume = 1; 	msg.rate = 1; 	msg.pitch = 0.8; 	msg.text = m; 	msg.lang = 'en-US';   	speechSynthesis.speak(msg); }
+
+
+//invisiblebox sounds
+var meow1 = document.createElement('audio');
+    meow1.setAttribute('src', 'assets/javascript/meow1.mp3');
+$('#invisiblebox1').click(function () {
+
+    
+    meow1.play();
+});

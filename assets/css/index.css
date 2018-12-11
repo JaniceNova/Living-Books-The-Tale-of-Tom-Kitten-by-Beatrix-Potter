@@ -154,3 +154,15 @@ html body {
       font-size: 25px;
     
   }
+
+
+  #invisiblebox1 {
+      color:purple;
+      border: 8px solid black;
+      width:250px;
+      height:350px;
+      z-index: 2;
+      position: fixed;
+      margin-top: 200px;
+      margin-left: 200px;
+  }
